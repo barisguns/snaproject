@@ -2,25 +2,36 @@
 
 Clustering on Social Network Graphs
 
+
 By Barış Gün Sürmeli
+
 
 Introduction
 
 Clustering on social network graphs are useful to extract and explore the information about the graph such as which people are strongly connected to the other, how people are grouped between each other. This information further can be helpful for; identifying which kind of properties of the groups of people have and the properties of the people that are in this group, estimating how the propagation of information on the network would be. Thus, a distance metric between the nodes of the network is defined and a k-medoids clustering is applied on the network depending on the calculated distances.
 
+
 Purpose of the Project
 
 Purpose of the project is to identify the clusters of nodes on the social network graph by calculating the distance between all node pairs in the network.
 
+
 Tools and Libraries Used
 
 Neo4j
+
 Python 2
+
 R 
+
 R package: cluster
+
 Git
+
 CSV
+
 cypher
+
 
 Implementation
 
@@ -40,9 +51,11 @@ This iterations are kept until there is no change in the representative nodes fo
 Partitioning Around Medoids algorithm is one implementation of the k-medoids clustering and in R we have its implementation as a function: pam().
 By giving the number of clusters and the dissimilarity matrix, pam() gives the names of the individuals(in our case, nodes, employee names), and which cluster they belong.
 
+
 Results
 
 Given the number of clusters, the distance metric we define works well and the resulting clusters contain the nodes that are highly connected to each other that contains many relations between them.
+
 
 References
 
